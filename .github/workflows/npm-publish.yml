@@ -1,1 +1,26 @@
 
+name: Build
+
+on:
+  push:
+      branches: all
+jobs:
+   check-and-publish:
+       name: "Task"
+       runs-on: ubuntu-latest
+       steps:
+            - name: "Checkout source code "
+              uses: actions/checkout@v2
+            - name: "Setup Node.js"
+              uses: actions/setup-node@v1
+              with: 
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org/
+            - name: "Instal dependencies"
+              run: npm install
+            - name: "Npm publish"
+              run: npm publish
+              env: 
+                 NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+            
+          
