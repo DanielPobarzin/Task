@@ -3,13 +3,14 @@ name: Build
 
 on:
   push:
-      branches: all
+      branches: 
+      - all
 jobs:
    check-and-publish:
        name: "Task"
        runs-on: ubuntu-latest
        steps:
-            - name: "Checkout source code "
+            - name: "Checkout source code"
               uses: actions/checkout@v2
             - name: "Setup Node.js"
               uses: actions/setup-node@v1
