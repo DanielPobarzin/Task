@@ -3,8 +3,7 @@ name: Build
 
 on:
   push:
-      branches: 
-      - all
+      branches: 'SpecialMatrix'
 jobs:
    check-and-publish:
        name: "Task"
