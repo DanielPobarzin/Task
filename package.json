@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielPobarzin/Task"
+    "url": "git+https://github.com/DanielPobarzin/Task.git"
   },
   "author": "",
   "license": "MIT",
