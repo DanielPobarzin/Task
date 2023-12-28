@@ -2,7 +2,7 @@
 name: Build
 
 on:
-   push
+   updates
 jobs:
    check-and-publish:
        name: "task-donson-build"
