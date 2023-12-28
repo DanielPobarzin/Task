@@ -3,3 +3,5 @@ Median
 Palindrom
 RemoveDupl
 RomanNumerals
+Palindrom
+ZigZag
