@@ -3,9 +3,6 @@
   "version": "1.0.1",
   "description": "Original version of this document copied from [yarnpkg](https://yarnpkg.com/lang/en/docs/package-json/).",
   "main": "index.js",
-  "scripts": {
-  "toc": "markdown-toc -i --maxdepth 3 README.md"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DanielPobarzin/Task.git"
