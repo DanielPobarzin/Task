@@ -3,7 +3,7 @@ name: Build
 
 on:
    push:
-       branches: 'Median'
+       branches: 'master'
 jobs:
    check-and-publish:
        name: "task-donson-build"
