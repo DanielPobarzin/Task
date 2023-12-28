@@ -14,7 +14,7 @@ jobs:
               uses: actions/setup-node@v1
               with: 
                   node-version: 12
-                  registry-url: https://www.npmjs.com/org/
+                  registry-url: https://www.npmjs.com/package/
             - name: "Edit config"
               run: git config --global user.name "daniil.nyashka@gmail.com" && git config --global user.name "Daniel"
             - name: "Version patch"
