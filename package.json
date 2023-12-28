@@ -1,11 +1,11 @@
 {
-  "name": "Task",
+  "name": "taskdonson",
   "version": "1.0.1",
   "description": "Original version of this document copied from [yarnpkg](https://yarnpkg.com/lang/en/docs/package-json/).",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DanielPobarzin/Task.git"
+    "url": "git+https://github.com/DanielPobarzin/Task"
   },
   "author": "",
   "license": "MIT",
