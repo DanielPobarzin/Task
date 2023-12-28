@@ -4,7 +4,7 @@
   "description": "Original version of this document copied from [yarnpkg](https://yarnpkg.com/lang/en/docs/package-json/).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "toc": "markdown-toc -i --maxdepth 3 README.md"
   },
   "repository": {
     "type": "git",
