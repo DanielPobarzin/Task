@@ -1,3 +1,10 @@
+/**
+ * 
+ * @param {*} l1 
+ * @param {*} l2 
+ * @returns 
+ */
+
 function AddTwoNumbers(l1,l2)
 {
 l1 = parseInt(l1.reverse().join(''))
