@@ -1,5 +1,5 @@
 {
-  "name": "tasksdonson",
+  "name": "Task",
   "version": "1.0.1",
   "description": "Original version of this document copied from [yarnpkg](https://yarnpkg.com/lang/en/docs/package-json/).",
   "main": "index.js",
@@ -12,8 +12,5 @@
   "bugs": {
     "url": "https://github.com/DanielPobarzin/Task/issues"
   },
-  "homepage": "https://github.com/DanielPobarzin/Task#readme",
-  "dependencies": {
-    "markdown-toc": "^1.2.0"
-  }
+  "homepage": "https://github.com/DanielPobarzin/Task#readme"
 }
