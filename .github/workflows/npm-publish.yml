@@ -16,9 +16,11 @@ jobs:
                   node-version: 20
                   registry-url: https://www.npmjs.com/org/
             - name: "Install dependencies"
-              run: npm install  
+              run: npm init
+                   npm install
             - name: "Npm publish"
-              run: npm publish --loglevel verbose
+              run: npm login
+                   npm publish --loglevel verbose
               env: 
                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
