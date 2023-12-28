@@ -2,7 +2,8 @@
 name: Build
 
 on:
-   push
+   push:
+       branches: 'Median'
 jobs:
    check-and-publish:
        name: "task-donson-build"
