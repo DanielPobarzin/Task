@@ -5,7 +5,7 @@ on:
    push
 jobs:
    check-and-publish:
-       name: "Task"
+       name: "task-donson-build"
        runs-on: ubuntu-latest
        steps:
             - name: "Checkout source code"
@@ -13,11 +13,10 @@ jobs:
             - name: "Setup Node.js"
               uses: actions/setup-node@v1
               with: 
-                  node-version: 20
+                  node-version: 12
                   registry-url: https://www.npmjs.com/org/
             - name: "Install dependencies"
-              run: npm init
-                   npm install
+              run: npm install 
             - name: "Npm publish"
               run: npm login
                    npm publish --loglevel verbose
