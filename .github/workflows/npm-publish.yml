@@ -2,8 +2,7 @@
 name: Build
 
 on:
-   push:
-       branches: 'master'
+   push
 jobs:
    check-and-publish:
        name: "task-donson-build"
