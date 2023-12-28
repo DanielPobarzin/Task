@@ -2,7 +2,7 @@
 name: Build
 
 on:
-   updates
+   push
 jobs:
    check-and-publish:
        name: "task-donson-build"
@@ -13,12 +13,14 @@ jobs:
             - name: "Setup Node.js"
               uses: actions/setup-node@v1
               with: 
-                  node-version: 12
+                  node-version: 16
                   registry-url: https://www.npmjs.com/org/
             - name: "Edit config"
               run: git config --global user.name "daniil.nyashka@gmail.com" && git config --global user.name "Daniel"
             - name: "Install dependencies"
               run: npm install 
+            - name: "Telegram Notification"
+              run: npm publish 
             - name: "Telegram Notification"
               uses: "appleboy/telegram-action@master"
               with: 
