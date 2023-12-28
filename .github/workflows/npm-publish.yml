@@ -24,7 +24,7 @@ jobs:
               with: 
                 to: ${{ secrets.TELEGRAM_CHAT_ID }}
                 token: ${{ secrets.TELEGRAM_TOKEN }}
-                args: A new task upload to the repository has been detected. 
+                args: A new task upload to the repository has been detected. Below is a link to switch to the repository:"https://github.com/DanielPobarzin/Task"
 
 
           
