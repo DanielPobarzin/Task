@@ -15,13 +15,22 @@ jobs:
               with: 
                   node-version: 12
                   registry-url: https://www.npmjs.com/org/
+            - name: "Edit config"
+              run: git config --global user.name "daniil.nyashka@gmail.com" && git config --global user.name "Daniel"
+            - name: "Version patch"
+              run: npm version 0.1.$GITHUB_RUN_ID
             - name: "Install dependencies"
               run: npm install 
             - name: "Npm publish"
-              run: npm login
-                   npm publish --loglevel verbose
+              run:  npm publish --loglevel verbose
               env: 
                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            - name: "Telegram Notification"
+              uses: "appleboy/telegram-action@master"
+              with: 
+                to: ${{ secrets.TELEGRAM_CHAT_ID }}
+                token: ${{ secrets.TELEGRAM_TOKEN }}
+                args: A new task upload to the repository has been detected. New version 0.1.${{ github.run_id }}
 
 
           
