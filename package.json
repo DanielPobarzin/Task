@@ -1,13 +1,14 @@
 {
-  "name": "package.json",
+  "name": "tasksdonson",
   "version": "1.0.0",
   "description": "Original version of this document copied from [yarnpkg](https://yarnpkg.com/lang/en/docs/package-json/).",
+  "main": "index.js",
   "scripts": {
-    "toc": "markdown-toc -i --maxdepth 3 README.md"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DanielPobarzin/Task.git"
+    "url": "git+https://github.com/DanielPobarzin/Task.git"
   },
   "author": "",
   "license": "MIT",
