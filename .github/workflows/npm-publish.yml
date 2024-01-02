@@ -20,7 +20,7 @@ jobs:
               run: git config --global user.name "daniil.nyashka@gmail.com" && git config --global user.name "Daniel"
 
             - name: "Install dependencies"
-              run: npm install 
+              run: npm i tasksdonson 
             - name: "Npm publish"
               run:  npm publish 
               env: 
