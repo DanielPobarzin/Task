@@ -13,4 +13,7 @@
     "url": "https://github.com/DanielPobarzin/Task/issues"
   },
   "homepage": "https://github.com/DanielPobarzin/Task#readme"
+  "publishConfig": {
+    "registry":"https://www.npmjs.com/package/tasksdonson"
+ },
 }
