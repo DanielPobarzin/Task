@@ -21,9 +21,7 @@ jobs:
             - name: "Version patch"
               run: npm version 0.1.$GITHUB_RUN_ID
             - name: "Install dependencies"
-              run: npm install 
-            - name: "Npm login"
-              run:  npm login --loglevel verbose
+              run: npm install org
             - name: "Npm publish"
               run:  npm publish 
               env: 
