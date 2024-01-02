@@ -18,10 +18,9 @@ jobs:
 
             - name: "Edit config"
               run: git config --global user.name "daniil.nyashka@gmail.com" && git config --global user.name "Daniel"
-            - name: "Version patch"
-              run: npm version 0.1.$GITHUB_RUN_ID
+
             - name: "Install dependencies"
-              run: npm install org
+              run: npm install 
             - name: "Npm publish"
               run:  npm publish 
               env: 
