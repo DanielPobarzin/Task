@@ -1,7 +1,0 @@
-Add Two Number
-Median
-Palindrom
-RemoveDupl
-RomanNumerals
-Palindrom
-ZigZag
